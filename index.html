@@ -1,0 +1,191 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Covid 19 safety</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="intro" class="header-container fs">
+        <header class="wrapper">
+            <h1 class="title">What covid pandemic that taught us ?</h1>
+            <p>It was almost 1,394,833 human lives gone. world Real GDP growth downfall this year -5.8%. Global
+                unemployment raised to 190 million.</p>
+            <p>Did you learn lessons ?</p>
+        </header>
+        <span class="scroll-hint">Scroll Down</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#intro"><span class="nav-dot"></span><span class="nav-label">Intro</span></a></li>
+            <li><a href="#slide01"><span class="nav-dot"></span><span class="nav-label">Slide One</span></a></li>
+            <li><a href="#slide02"><span class="nav-dot"></span><span class="nav-label">Slide Two</span></a></li>
+            <li><a href="#slide03"><span class="nav-dot"></span><span class="nav-label">Slide Three</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <article id="slide02" class="slide fs" style="width: 100%;">
+
+
+            <div id="imagesequence pos-relative" style="overflow: hidden;">
+                <img style="width: 100%;" id="myimg" />
+
+                <section class="center-align">
+                    <div class="quote-container ">
+                        <blockquote class="quote1">
+                            <h1 class="slideInUp">Think about it...</h1>
+                            <p class="slideInUp bold">Its going to be too worst if you late</p>
+
+                        </blockquote>
+                        <blockquote class="quote2">
+                            <h1 class="slideInUp">Take safety actions always</h1>
+                            <p class="slideInUp bold">you have to Wear a mask
+                                ,Clean your hands
+                                ,Keep a safe distance</p>
+                        </blockquote>
+                        <blockquote class="quote3">
+                            <h1 class="slideInUp">Help others </h1>
+                            <p class="slideInUp bold">Try Help others to overcome problems during this period</p>
+                        </blockquote>
+                    </div>
+                </section>
+            </div>
+
+
+        </article>
+        <article id="slide01" class="slide fs">
+            <div class="wrapper">
+                <header>
+                    <h1 class="slideInUp">Greatest lesson </h1>
+                </header>
+                <section>
+                    <h2 class="slideInUp">greatest lesson that COVID-19 can teach humanity is that we are all in this
+                        together.</h2>
+
+
+                </section>
+            </div> <!-- .wrapper -->
+        </article>
+
+
+
+
+
+    </div> <!-- #main-container -->
+
+    <div class="footer-container">
+        <footer class="wrapper">
+            <h3>2020 &copy; <a href="https://sithila.github.io/epicsitha.com" target="_blank">epicsitha.com</a> | UI/UX
+                Engineer</h3>
+        </footer>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+
+
+    <script src="js/main.js"></script>
+    <script>
+
+
+
+        // define images
+        var images = [
+            "img/example_imagesequence_01.jpg",
+            "img/example_imagesequence_02.jpg",
+            "img/example_imagesequence_03.jpg",
+            "img/example_imagesequence_04.jpg",
+            "img/example_imagesequence_05.jpg",
+            "img/example_imagesequence_06.jpg"
+        ];
+
+        // TweenMax can tween any property of any object. We use this object to cycle through the array
+        var obj = { curImg: 0 };
+
+        var tl2 = new TimelineMax()
+            .from($(".quote1, .quote2, .quote3"), 1, { y: "-200%", autoAlpha: 0 })
+            .to(".quote1", 1, { y: "0%", autoAlpha: 1 })
+            .to(".quote1", 1, { y: "-=50%", autoAlpha: 0 })
+            .to(".quote2", 1, { y: "0%", autoAlpha: 1 })
+            .to(".quote2", 1, { y: "-=50%", autoAlpha: 0 })
+            .to(".quote3", 1, { y: "0%", autoAlpha: 1 });
+
+
+
+
+
+
+        // create tween
+        var tween = new TweenMax(obj, 0.5,
+            {
+                curImg: images.length + 1,	// animate propery curImg to number of images
+                roundProps: "curImg",				// only integers so it can be used as an array index
+                repeat: 0,									// repeat 3 times
+                immediateRender: true,			// load first image automatically
+                ease: Linear.easeNone,			// show every image the same ammount of time
+                onUpdate: function () {
+                    $("#myimg").attr("src", images[obj.curImg]); // set the image source
+                }
+            }
+        );
+
+        // init controller
+        tl2.duration(tween.duration());
+        var slideAnimation = new TimelineMax();
+        slideAnimation.add(tween, 0).add(tl2, 0);
+
+        var controller = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                triggerHook: 0,
+                reverse: true
+            }
+        });
+        // build scene
+        var scene = new ScrollMagic.Scene({ triggerElement: "#slide02", duration: 2500 })
+            .setTween(slideAnimation)
+            .setPin('#slide02') // add indicators (requires plugin)
+            .addTo(controller);
+
+
+
+
+                                  // handle form change
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
